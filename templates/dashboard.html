@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Dashboard</h1>
+
+<div class="cards">
+
+    <div class="card">
+
+        <h3>Total Products</h3>
+
+        <h2>{{ total_products }}</h2>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>Total Customers</h3>
+
+        <h2>{{ total_customers }}</h2>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>Total Sales</h3>
+
+        <h2>{{ total_sales }}</h2>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>Total Revenue</h3>
+
+        <h2>₹{{ total_revenue }}</h2>
+
+    </div>
+
+
+    <div class="card">
+
+        <h3>Low Stock</h3>
+
+        <h2>{{ low_stock }}</h2>
+
+    </div>
+
+</div>
+
+{% endblock %}

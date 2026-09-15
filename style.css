@@ -1,0 +1,67 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+}
+
+nav {
+    background: #222;
+    padding: 20px;
+}
+
+nav h2 {
+    color: white;
+    display: inline;
+    margin-right: 40px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.container {
+    padding: 30px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    width: 180px;
+    box-shadow: 0 2px 8px gray;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #222;
+    color: white;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    cursor: pointer;
+}

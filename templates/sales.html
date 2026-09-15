@@ -1,0 +1,22 @@
+@app.route("/sales")
+def sales_list():
+
+    if "username" not in session:
+        return redirect("/")
+
+    sales_data = sales.find().sort(
+        "created_at",
+        -1
+    )
+
+    product_data = products.find({
+        "quantity": {
+            "$gt": 0
+        }
+    })
+
+    return render_template(
+        "sales.html",
+        sales=sales_data,
+        products=product_data
+    )
